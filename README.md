@@ -1,6 +1,6 @@
 # st-learning-mapstruct
 
-Minimal Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns.
+Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns with JUnit5.
 
 ## Examples
 
@@ -18,7 +18,3 @@ Build, run the sample applications, or run tests with the Gradle wrapper (recomm
 # Run the test suite
 ./gradlew test
 ```
-
-## Notes
-
-- MapStruct is configured via the version catalog in `gradle/libs.versions.toml` and the annotation processor is enabled in `build.gradle.kts`.
