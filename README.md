@@ -1,15 +1,24 @@
 # st-learning-mapstruct
 
-Minimal Gradle (Kotlin DSL) Java project demonstrating MapStruct.
+Minimal Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns.
 
-Build and run:
+## Examples
+
+- basic: simple mapping between `PersonEntity` and `PersonDTO` using MapStruct.
+- recordexample: mapping to a Java `record`-based DTO (`PersonDTO` is a `record`).
+- enumexample: demonstrates mapping between different enum types (external -> domain).
+- sourcepropertyexample: source object uses property-style accessors (`firstName()` / `firstName(String)`), target DTO uses standard getters/setters.
+- targetpropertyexample: source object uses standard getters/setters, target DTO uses property-style accessors (demonstrates `@AfterMapping` usage).
+
+## Running Tests
+
+Build, run the sample applications, or run tests with the Gradle wrapper (recommended):
 
 ```bash
-# using system gradle
-gradle run
-
-# or with the Gradle wrapper (generate it if you don't have it):
-./gradlew run
+# Run the test suite
+./gradlew test
 ```
 
-Expect output showing mapped DTO values.
+## Notes
+
+- MapStruct is configured via the version catalog in `gradle/libs.versions.toml` and the annotation processor is enabled in `build.gradle.kts`.
