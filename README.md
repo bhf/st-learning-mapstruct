@@ -7,15 +7,32 @@ Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns with J
 
 ## Examples
 
-- basic: simple mapping between `PersonEntity` and `PersonDTO` using MapStruct.
-- recordexample: mapping to a Java `record`-based DTO (`PersonDTO` is a `record`).
-- enumexample: demonstrates mapping between different enum types (external -> domain).
-- sourcepropertyexample: source object uses property-style accessors (`firstName()` / `firstName(String)`), target DTO uses standard getters/setters.
-- targetpropertyexample: source object uses standard getters/setters, target DTO uses property-style accessors (demonstrates `@AfterMapping` usage).
+### Basic
+
+Simple mapping between `PersonEntity` and `PersonDTO` using MapStruct.
+
+### Record Example
+
+Mapping to a Java `record`-based DTO (`PersonDTO` is a `record`).
+
+### Enum Example
+
+Demonstrates mapping between different enum types (external -> domain).
+
+### Source Property Example: 
+
+Source object uses property-style accessors (`firstName()` / `firstName(String)`), target DTO uses standard getters/setters.
+
+### Target Property Example
+Source object uses standard getters/setters, target DTO uses property-style accessors (demonstrates `@AfterMapping` usage).
+
+### Iterable Example
+
+Source entity has an `Iterable<Item>` field where `Item` exposes property-style accessors; the DTO uses a `List<ItemDTO>` field. Demonstrates mapping from an `Iterable` source to a `List` target and element mapping.
 
 ## Running Tests
 
-Build, run the sample applications, or run tests with the Gradle wrapper (recommended):
+Build, run the sample applications, or run tests with the Gradle wrapper:
 
 ```bash
 # Run the test suite

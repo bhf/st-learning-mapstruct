@@ -1,0 +1,20 @@
+package com.bhf.learning.mapstruct.iterableexample;
+
+public class Item {
+    private String value;
+
+    public Item() {
+    }
+
+    public Item(String value) {
+        this.value = value;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public void setValue(String value) {
+        this.value = value;
+    }
+}
