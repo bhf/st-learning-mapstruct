@@ -3,7 +3,7 @@
 
 # st-learning-mapstruct
 
-Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns with JUnit5.
+Gradle (Kotlin DSL) Java project demonstrating various MapStruct patterns and recipes with JUnit5.
 
 ## Examples
 
